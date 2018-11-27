@@ -1,0 +1,21 @@
+{
+  "name": "simple-package",
+  "description": "A simple example Pika package",
+  "version": "1.0.0",
+  "license": "MIT",
+  "pika": true,
+  "keywords": [
+    "pika-pkg"
+  ],
+  "files": [
+    "dist-*/",
+    "assets/",
+    "bin/"
+  ],
+  "sideEffects": false,
+  "dependencies": {},
+  "source": "dist-src/index.js",
+  "main": "dist-node/index.js",
+  "module": "dist-web/index.js",
+  "types": "dist-types/index.d.ts"
+}

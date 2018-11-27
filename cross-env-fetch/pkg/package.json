@@ -1,0 +1,23 @@
+{
+  "name": "@pika/fetch",
+  "description": "An isomorphic, cross-environment Fetch API ponyfill.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "pika": true,
+  "keywords": [
+    "pika-pkg"
+  ],
+  "files": [
+    "dist-*/",
+    "assets/",
+    "bin/"
+  ],
+  "sideEffects": false,
+  "dependencies": {
+    "node-fetch": "^2.3.0"
+  },
+  "source": "dist-src/index.js",
+  "main": "dist-node/index.js",
+  "module": "dist-web/index.js",
+  "types": "dist-types/index.d.ts"
+}

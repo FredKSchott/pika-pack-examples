@@ -1,0 +1,21 @@
+{
+  "name": "bucklescript-ml-package",
+  "description": "``` npm run build ```",
+  "version": "0.1.0",
+  "license": "MIT",
+  "pika": true,
+  "keywords": [
+    "BuckleScript",
+    "pika-pkg"
+  ],
+  "files": [
+    "dist-*/",
+    "assets/",
+    "bin/"
+  ],
+  "sideEffects": false,
+  "dependencies": {},
+  "es2015": "dist-src/index.js",
+  "main": "dist-node/index.js",
+  "module": "dist-web/index.js"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "simple-cli",
+  "description": "A simple example Pika CLI package",
+  "version": "1.0.0",
+  "scripts": {},
+  "license": "MIT",
+  "distributions": {
+    "src": [true],
+    "plugins": [
+      ["@pika/node-builder"],
+      ["@pika/simple-bin", {"bin": "my-example-cli"}]
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@pika/node-builder": "^0.2.1",
+    "@pika/simple-bin": "^0.2.1"
+  }
+}

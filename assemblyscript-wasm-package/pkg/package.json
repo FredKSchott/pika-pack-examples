@@ -1,0 +1,20 @@
+{
+  "name": "game-of-life",
+  "version": "1.0.0",
+  "license": "MIT",
+  "pika": true,
+  "keywords": [
+    "pika-pkg"
+  ],
+  "files": [
+    "dist-*/",
+    "assets/",
+    "bin/"
+  ],
+  "sideEffects": false,
+  "dependencies": {},
+  "src": "dist-src/index.js",
+  "web": "dist-web/index.js",
+  "node": "dist-node/index.js",
+  "types": "dist-types/index.js"
+}

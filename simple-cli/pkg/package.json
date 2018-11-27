@@ -1,0 +1,22 @@
+{
+  "name": "simple-cli",
+  "description": "A simple example Pika CLI package",
+  "version": "1.0.0",
+  "license": "MIT",
+  "pika": true,
+  "keywords": [
+    "pika-pkg"
+  ],
+  "files": [
+    "dist-*/",
+    "assets/",
+    "bin/"
+  ],
+  "sideEffects": false,
+  "dependencies": {},
+  "source": "dist-src/index.js",
+  "main": "dist-node/index.js",
+  "bin": {
+    "my-example-cli": "dist-node/index.bin.js"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "simple-package",
+  "description": "A simple example Pika package",
+  "version": "1.0.0",
+  "scripts": {},
+  "license": "MIT",
+  "distributions": {
+    "src": [[true, {"exclude": ["__tests__/*"]}]],
+    "plugins": [
+      ["@pika/node-builder"],
+      ["@pika/web-builder"],
+      ["@pika/types-builder"]
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@pika/node-builder": "^0.2.1",
+    "@pika/types-builder": "^0.2.1",
+    "@pika/web-builder": "^0.2.1"
+  }
+}
