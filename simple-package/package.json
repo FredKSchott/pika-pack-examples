@@ -4,18 +4,37 @@
   "version": "1.0.0",
   "scripts": {},
   "license": "MIT",
-  "distributions": {
-    "src": [[true, {"exclude": ["__tests__/*"]}]],
-    "plugins": [
-      ["@pika/node-builder"],
-      ["@pika/web-builder"],
-      ["@pika/types-builder"]
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg",
+        {
+          "exclude": [
+            "__tests__/*"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ],
+      [
+        "@pika/plugin-bundle-web"
+      ],
+      [
+        "@pika/plugin-build-types"
+      ]
     ]
   },
   "dependencies": {},
   "devDependencies": {
-    "@pika/node-builder": "^0.2.1",
-    "@pika/types-builder": "^0.2.1",
-    "@pika/web-builder": "^0.2.1"
+    "@pika/plugin-build-node": "^0.3.4",
+    "@pika/plugin-build-types": "^0.3.4",
+    "@pika/plugin-build-web": "^0.3.4",
+    "@pika/plugin-bundle-web": "^0.3.4",
+    "@pika/plugin-standard-pkg": "^0.3.4",
+    "@pika/types": "^0.3.4"
   }
 }
