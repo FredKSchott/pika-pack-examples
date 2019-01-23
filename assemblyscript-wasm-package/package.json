@@ -2,25 +2,23 @@
   "name": "game-of-life",
   "version": "1.0.0",
   "license": "MIT",
-  "distributions": {
-    "assets": [
+  "@pika/pack": {
+    "pipeline": [
       [
-        "@pika/assemblyscript-builder",
+        "@pika/plugin-wasm-assemblyscript",
         {}
-      ]
-    ],
-    "src": [
+      ],
       [
-        "@pika/simple-wasm-wrapper",
+        "@pika/plugin-wasm-bindings",
         {}
       ]
     ]
   },
+  "dependencies": {},
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.2.3",
-    "@pika/simple-wasm-wrapper": "^0.2.1",
-    "@pika/assemblyscript-builder": "^0.2.1",
+    "@pika/plugin-wasm-assemblyscript": "^0.3.0",
+    "@pika/plugin-wasm-bindings": "^0.3.0",
     "assemblyscript": "github:AssemblyScript/assemblyscript"
-  },
-  "dependencies": {}
+  }
 }

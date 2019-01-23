@@ -1,12 +1,11 @@
 {
-  "name": "bucklescript-ml-package",
+  "name": "bucklescript-ml-ap",
   "description": "``` npm run build ```",
   "version": "0.1.0",
   "license": "MIT",
   "pika": true,
   "keywords": [
-    "BuckleScript",
-    "pika-pkg"
+    "BuckleScript"
   ],
   "files": [
     "dist-*/",

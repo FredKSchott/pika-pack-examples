@@ -14,9 +14,12 @@ try {
   cli = require('./index.js');
 }
 
-if (!cli.autoRun) {
-  cli.default().catch(function (error) {
-    console.error(error.stack || error.message || error);
-    process.exitCode = 1;
-  });
+if (cli.autoRun) {
+  return;
 }
+
+const run = cli.run || cli.cli || cli.default;
+run(process.argv).catch(function (error) {
+  console.error(error.stack || error.message || error);
+  process.exitCode = 1;
+});

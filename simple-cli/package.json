@@ -4,16 +4,31 @@
   "version": "1.0.0",
   "scripts": {},
   "license": "MIT",
-  "distributions": {
-    "src": [true],
-    "plugins": [
-      ["@pika/node-builder"],
-      ["@pika/simple-bin", {"bin": "my-example-cli"}]
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg",
+        {
+          "exclude": [
+            "__tests__/*"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-simple-bin",
+        {
+          "bin": "my-example-cli"
+        }
+      ]
     ]
   },
   "dependencies": {},
   "devDependencies": {
-    "@pika/node-builder": "^0.2.1",
-    "@pika/simple-bin": "^0.2.1"
+    "@pika/plugin-standard-pkg": "^0.3.0",
+    "@pika/plugin-build-node": "^0.3.0",
+    "@pika/plugin-simple-bin": "^0.3.0"
   }
 }

@@ -4,21 +4,20 @@
   "version": "1.0.0",
   "scripts": {},
   "license": "MIT",
-  "distributions": {
-    "src": [[true, {"exclude": ["__tests__/*"]}]],
-    "plugins": [
-      ["@pika/node-builder"],
-      ["@pika/web-builder"],
-      ["@pika/deno-builder"],
-      ["@pika/types-builder"]
+  "@pika/pack": {
+    "pipeline": [
+      ["@pika/plugin-ts-standard-pkg", {"exclude": ["__tests__/*"]}],
+      ["@pika/plugin-build-node"],
+      ["@pika/plugin-build-web"],
+      ["@pika/plugin-build-deno"]
     ]
   },
   "dependencies": {},
   "devDependencies": {
-    "typescript": "^3.2.2",
-    "@pika/node-builder": "^0.2.1",
-    "@pika/web-builder": "^0.2.1",
-    "@pika/deno-builder": "^0.2.1",
-    "@pika/types-builder": "^0.2.1"
+    "@pika/plugin-build-node": "^0.3.4",
+    "@pika/plugin-build-deno": "^0.3.4",
+    "@pika/plugin-build-web": "^0.3.4",
+    "@pika/plugin-ts-standard-pkg": "^0.3.4",
+    "typescript": "^3.2.2"
   }
 }

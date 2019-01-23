@@ -1,5 +1,5 @@
-export const greetOutLoud = name => {
-  console.log(`Hello, ${name}`);
+export const greetOutLoud = (name) => {
+    console.log(`Hello, ${name}`);
 };
-import { greetOutLoudAsync } from "./foo.js";
+import { greetOutLoudAsync } from './foo';
 export { greetOutLoudAsync };
