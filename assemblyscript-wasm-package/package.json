@@ -4,14 +4,8 @@
   "license": "MIT",
   "@pika/pack": {
     "pipeline": [
-      [
-        "@pika/plugin-wasm-assemblyscript",
-        {}
-      ],
-      [
-        "@pika/plugin-wasm-bindings",
-        {}
-      ]
+      ["@pika/plugin-wasm-assemblyscript", {}],
+      ["@pika/plugin-wasm-bindings", {}]
     ]
   },
   "dependencies": {},

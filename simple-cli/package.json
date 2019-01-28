@@ -6,23 +6,9 @@
   "license": "MIT",
   "@pika/pack": {
     "pipeline": [
-      [
-        "@pika/plugin-standard-pkg",
-        {
-          "exclude": [
-            "__tests__/*"
-          ]
-        }
-      ],
-      [
-        "@pika/plugin-build-node"
-      ],
-      [
-        "@pika/plugin-simple-bin",
-        {
-          "bin": "my-example-cli"
-        }
-      ]
+      ["@pika/plugin-standard-pkg", {"exclude": ["__tests__/*"]}],
+      ["@pika/plugin-build-node"],
+      ["@pika/plugin-simple-bin", {"bin": "my-example-cli"}]
     ]
   },
   "dependencies": {},

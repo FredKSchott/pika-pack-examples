@@ -1,13 +1,10 @@
-# example-pika-package-a
+# simple-cli
 
-A simple, example Pika package.
+Example of how to build a simple JavaScript library with an additional CLI wrapper provided by `@pika/plugin-simple-bin`.
 
-- Written in JavaScript
-- 0 dependencies
+## Build
 
 ```
-git clone && cd example-pika-package-a
-pika install
+npm i
 pika build
-pika validate
 ```

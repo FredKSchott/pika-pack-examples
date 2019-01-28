@@ -1,13 +1,11 @@
-# example-pika-package-b
+# typescript-package
 
-A simple, example Pika package.
+Example of how to build a simple npm package from TypeScript source.
 
-- Written in TypeScript
-- 1 dependency
+
+## Build
 
 ```
-git clone && cd example-pika-package-b
-pika install
+npm i
 pika build
-pika validate
 ```

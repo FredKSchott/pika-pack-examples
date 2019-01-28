@@ -1,0 +1,19 @@
+{
+  "name": "reason-ocaml-package",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "@pika/pack": {
+    "pipeline": [
+      ["@pika/plugin-wasm-bucklescript", {}],
+      ["@pika/plugin-build-node", {}],
+      ["@pika/plugin-build-web", {}]
+    ]
+  },
+  "devDependencies": {
+    "@pika/plugin-wasm-bucklescript": "^0.3.0",
+    "@pika/plugin-build-node": "^0.3.0",
+    "@pika/plugin-build-web": "^0.3.0",
+    "bs-platform": "^4.0.18"
+  }
+}
