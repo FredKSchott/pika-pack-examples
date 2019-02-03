@@ -3,17 +3,22 @@
   "description": "A simple example Pika CLI package",
   "version": "1.0.0",
   "license": "MIT",
+  "bin": {
+    "my-example-cli": "dist-node/index.bin.js"
+  },
+  "esnext": "dist-src/index.js",
+  "main": "dist-node/index.js",
   "pika": true,
+  "sideEffects": false,
   "files": [
     "dist-*/",
     "assets/",
     "bin/"
   ],
-  "sideEffects": false,
   "dependencies": {},
-  "esnext": "dist-src/index.js",
-  "main": "dist-node/index.js",
-  "bin": {
-    "my-example-cli": "dist-node/index.bin.js"
+  "devDependencies": {
+    "@pika/plugin-standard-pkg": "^0.3.0",
+    "@pika/plugin-build-node": "^0.3.0",
+    "@pika/plugin-simple-bin": "^0.3.0"
   }
 }

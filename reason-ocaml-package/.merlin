@@ -1,7 +1,7 @@
 ####{BSB GENERATED: NO EDIT
-FLG -ppx /Users/fks/Code/pika-examples/bucklescript-ml-package/node_modules/bs-platform/lib/bsppx.exe
-S /Users/fks/Code/pika-examples/bucklescript-ml-package/node_modules/bs-platform/lib/ocaml
-B /Users/fks/Code/pika-examples/bucklescript-ml-package/node_modules/bs-platform/lib/ocaml
+FLG -ppx /Users/fks/Code/pika-examples/reason-ocaml-package/node_modules/bs-platform/lib/bsppx.exe
+S /Users/fks/Code/pika-examples/reason-ocaml-package/node_modules/bs-platform/lib/ocaml
+B /Users/fks/Code/pika-examples/reason-ocaml-package/node_modules/bs-platform/lib/ocaml
 FLG -nostdlib -color always
 FLG -w -30-40+6+7+27+32..39+44+45+101
 S src

@@ -39,6 +39,10 @@ function _asyncToGenerator(fn) {
 }
 
 const Greeter = name => `Hello ${name}, from ${new (typeof URL !== 'undefined' ? URL : require('ur'+'l').URL)((process.browser ? '' : 'file:') + __filename, process.browser && document.baseURI).href}`;
+/**
+ * Will be called by the CLI wrapper provided by @pika/plugin-simple-bin
+ */
+
 function run(_x) {
   return _run.apply(this, arguments);
 }

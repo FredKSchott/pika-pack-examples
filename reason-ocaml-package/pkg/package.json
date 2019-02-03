@@ -1,20 +1,24 @@
 {
-  "name": "@pika/bucklescript-ml-ap",
-  "description": "``` npm run build ```",
+  "name": "@pika/reason-ocaml-package",
+  "description": "Uses [BuckleScript](https://bucklescript.github.io/) to compile Reason or OCaml to a JavaScript npm package.",
   "version": "0.1.0",
   "license": "MIT",
+  "es2015": "dist-src/index.js",
+  "main": "dist-node/index.js",
+  "module": "dist-web/index.js",
   "pika": true,
-  "keywords": [
-    "BuckleScript"
-  ],
+  "sideEffects": false,
   "files": [
     "dist-*/",
     "assets/",
     "bin/"
   ],
-  "sideEffects": false,
   "dependencies": {},
-  "es2015": "dist-src/index.js",
-  "main": "dist-node/index.js",
-  "module": "dist-web/index.js"
+  "devDependencies": {
+    "@pika/plugin-wasm-bucklescript": "^0.3.0",
+    "@pika/plugin-build-node": "^0.3.0",
+    "@pika/plugin-build-web": "^0.3.0",
+    "bs-platform": "^4.0.18"
+  },
+  "private": true
 }

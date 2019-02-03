@@ -1,17 +1,24 @@
 {
   "name": "@pika/game-of-life",
+  "description": "Uses [AssemblyScript](https://github.com/AssemblyScript/assemblyscript) to compile TypeScript into WASM, with JavaScript bindings.",
   "version": "1.0.0",
   "license": "MIT",
+  "src": "dist-src/index.js",
+  "web": "dist-web/index.js",
+  "node": "dist-node/index.js",
+  "types": "dist-types/index.js",
   "pika": true,
+  "sideEffects": false,
   "files": [
     "dist-*/",
     "assets/",
     "bin/"
   ],
-  "sideEffects": false,
   "dependencies": {},
-  "src": "dist-src/index.js",
-  "web": "dist-web/index.js",
-  "node": "dist-node/index.js",
-  "types": "dist-types/index.js"
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.2.3",
+    "@pika/plugin-wasm-assemblyscript": "^0.3.0",
+    "@pika/plugin-wasm-bindings": "^0.3.0",
+    "assemblyscript": "github:AssemblyScript/assemblyscript"
+  }
 }

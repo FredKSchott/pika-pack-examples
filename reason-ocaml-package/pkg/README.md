@@ -1,16 +1,8 @@
+# reason-ocaml-package
 
-
-# Build
-```
-npm run build
-```
-
-# Watch
+Uses [BuckleScript](https://bucklescript.github.io/) to compile Reason or OCaml to a JavaScript npm package.
 
 ```
-npm run watch
+npm i
+pika build
 ```
-
-
-# Editor
-If you use `vscode`, Press `Windows + Shift + B` it will build automatically

@@ -3,16 +3,24 @@
   "description": "A simple example Pika package",
   "version": "1.0.0",
   "license": "MIT",
+  "esnext": "dist-src/index.js",
+  "main": "dist-node/index.js",
+  "module": "dist-web/index.js",
+  "types": "dist-types/index.d.ts",
   "pika": true,
+  "sideEffects": false,
   "files": [
     "dist-*/",
     "assets/",
     "bin/"
   ],
-  "sideEffects": false,
   "dependencies": {},
-  "esnext": "dist-src/index.js",
-  "main": "dist-node/index.js",
-  "module": "dist-web/index.js",
-  "types": "dist-types/index.d.ts"
+  "devDependencies": {
+    "@pika/plugin-build-node": "^0.3.4",
+    "@pika/plugin-build-types": "^0.3.4",
+    "@pika/plugin-build-web": "^0.3.4",
+    "@pika/plugin-bundle-web": "^0.3.4",
+    "@pika/plugin-standard-pkg": "^0.3.4",
+    "@pika/types": "^0.3.4"
+  }
 }
