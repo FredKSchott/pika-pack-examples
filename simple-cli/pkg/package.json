@@ -1,5 +1,5 @@
 {
-  "name": "simple-cli",
+  "name": "@pika/simple-cli",
   "description": "A simple example Pika CLI package",
   "version": "1.0.0",
   "license": "MIT",

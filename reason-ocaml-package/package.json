@@ -1,5 +1,5 @@
 {
-  "name": "reason-ocaml-package",
+  "name": "@pika/reason-ocaml-package",
   "version": "0.1.0",
   "license": "MIT",
   "private": true,

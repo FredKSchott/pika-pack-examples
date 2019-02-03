@@ -1,5 +1,5 @@
 {
-  "name": "game-of-life",
+  "name": "@pika/game-of-life",
   "version": "1.0.0",
   "license": "MIT",
   "pika": true,

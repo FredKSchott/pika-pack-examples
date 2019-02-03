@@ -1,5 +1,5 @@
 {
-  "name": "bucklescript-ml-ap",
+  "name": "@pika/bucklescript-ml-ap",
   "description": "``` npm run build ```",
   "version": "0.1.0",
   "license": "MIT",

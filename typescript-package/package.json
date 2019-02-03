@@ -1,5 +1,5 @@
 {
-  "name": "typescript-package",
+  "name": "@pika/typescript-package",
   "description": "A simple example Pika package written in TypeScript",
   "version": "1.0.0",
   "scripts": {},
