@@ -9,7 +9,6 @@
       ["@pika/plugin-standard-pkg", {"exclude": ["__tests__/*"]}],
       ["@pika/plugin-build-node"],
       ["@pika/plugin-build-web"],
-      ["@pika/plugin-bundle-web"],
       ["@pika/plugin-build-types"]
     ]
   },

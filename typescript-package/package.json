@@ -6,7 +6,7 @@
   "license": "MIT",
   "@pika/pack": {
     "pipeline": [
-      ["@pika/plugin-ts-standard-pkg", {"exclude": ["__tests__/*"]}],
+      ["@pika/plugin-ts-standard-pkg"],
       ["@pika/plugin-build-node"],
       ["@pika/plugin-build-web"],
       ["@pika/plugin-build-deno"]
