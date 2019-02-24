@@ -1,9 +1,13 @@
 {
-  "name": "simple-package",
+  "name": "@pikapkg/simple-package",
   "description": "A simple example Pika package",
   "version": "1.0.0",
   "scripts": {},
   "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/@pikapkg/examples.git"
+  },
   "@pika/pack": {
     "pipeline": [
       ["@pika/plugin-standard-pkg", {"exclude": ["__tests__/*"]}],
