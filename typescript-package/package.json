@@ -18,6 +18,6 @@
     "@pika/plugin-build-deno": "^0.3.4",
     "@pika/plugin-build-web": "^0.3.4",
     "@pika/plugin-ts-standard-pkg": "^0.3.4",
-    "typescript": "^3.2.2"
+    "typescript": "^3.4.5"
   }
 }
