@@ -7,5 +7,5 @@ Example of how to build a simple npm package from TypeScript source.
 
 ```
 npm i
-pika build
+pack build
 ```

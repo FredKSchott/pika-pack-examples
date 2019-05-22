@@ -4,5 +4,5 @@ Uses [BuckleScript](https://bucklescript.github.io/) to compile Reason or OCaml 
 
 ```
 npm i
-pika build
+pack build
 ```
