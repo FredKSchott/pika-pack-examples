@@ -6,5 +6,5 @@ Example of how to build a simple JavaScript library.
 
 ```
 npm i
-pika build
+pack build
 ```

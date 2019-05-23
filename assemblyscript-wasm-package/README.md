@@ -6,7 +6,7 @@ Uses [AssemblyScript](https://github.com/AssemblyScript/assemblyscript) to compi
 
 ```
 npm i
-pika build
+pack build
 ```
 
 ## Demo

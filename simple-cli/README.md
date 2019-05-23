@@ -6,5 +6,5 @@ Example of how to build a simple JavaScript library with an additional CLI wrapp
 
 ```
 npm i
-pika build
+pack build
 ```
